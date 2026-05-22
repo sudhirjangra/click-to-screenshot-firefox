@@ -1,6 +1,3 @@
-# Sync Screenshots from Downloads to OneDrive
-# PowerShell version handles apostrophes + special characters
-
 $SourceDir = "$env:USERPROFILE\Downloads\VIF_screenshots"
 $TargetDir = "$env:USERPROFILE\OneDrive - Kantar\Sachindra Nain (external)'s files - TRAI Data Adequacy"
 $LogFile = "$env:USERPROFILE\Downloads\screenshot_sync_log.txt"
@@ -10,7 +7,6 @@ Add-Content -Path $LogFile -Value ""
 Add-Content -Path $LogFile -Value "========== Sync Started: $(Get-Date) =========="
 Add-Content -Path $LogFile -Value "Source: $SourceDir"
 Add-Content -Path $LogFile -Value "Target: $TargetDir"
-
 Write-Host ""
 Write-Host "========== SCREENSHOT SYNC ==========" -ForegroundColor Cyan
 Write-Host "Source: $SourceDir"
